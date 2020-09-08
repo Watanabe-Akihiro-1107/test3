@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";  /*ここを追加*/
+ @import "bootstrap";            /*ここを追加*/
+
+
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #090909;
+    height:60px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    height:60px;
+    }
+
+.icon{
+    display:inline-block;
+    margin-right:10px;
+    line-height:60px;
+    color: #9d9d9d;
+    
+}
+
+.navbar-right{
+    color:#9d9d9d;
+}
+
+
+
+
+.navbar-left{
+font-size: 20px;
+padding-top: 10px;
+color:white;}
+
+
+
+
+input[type="text"] {
+        width: 300px;
+        height: 40px;
+    }
+
+
+#book_body{
+    width:300px;
+    height:40px;
+}
+
+.btn{
+    text-align: center;
+    display:inline-block;
+}
+.btn-wrapper{
+    margin-left: 400px;
+    margin-right: 400px;
+    }
+
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+   }
+
+ .btn-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;}
+
+.glyphicon-wrench{
+    border-color: #ccc;
+}
+

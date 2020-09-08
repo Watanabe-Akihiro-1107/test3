@@ -1,0 +1,55 @@
+
+
+<p id="notice"><%= notice %></p>
+
+
+<%= render 'books/templete', book: @book , user: @user %>
+<h2>Book detail</h2>
+
+
+
+
+
+     <div class="col-xs-9">  <!-- ここを追加 -->
+     <table class="table table-striped">
+     <thead>
+
+      <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+       
+       <th colspan="5"></th>
+       </tr>
+      </thead>
+
+      <tbody>
+
+      
+
+    
+      <tr>
+
+        <td><%= link_to user_path(@books.user_id) do %><%= attachment_image_tag @books.user, :profile_image, :fill, 30, 30 %><br><%= link_to user_path(@books.user_id) do %><%= @user.name %><% end %></td><% end %>
+
+
+        <td><%= link_to book_path(@books.id) do %> <%= @books.title %> <% end %></td>
+        <td><%= @books.body %></td>
+        <% if @books.user_id == current_user.id %>
+        <td><%= link_to("Edit", edit_book_path(@books.id)) %></td>
+        <td><%= link_to("Destroy",book_path(@books), {method:"delete"}) %></td>
+        <% end %>
+
+      </tr>
+     
+     
+     </tbody>
+     </table>
+     </div>   <!-- ここを追加 -->
+    
+
+  
+    
+ 
